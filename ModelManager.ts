@@ -1,25 +1,10 @@
-import type { currentStatus } from ".";
-import  { type model, evaluator } from "./constants"
+import type { currentStatus, model, question, response } from "./types"
+import { evaluator } from "./constants"
 import qusetionSet from "./questions/test.json" assert { type: "json" }
 import { models } from "./constants";
 import { OpenAI } from "openai/client.js";
-import run from "./components/tables";
 import fs from 'fs';
 import { pricings } from './constants'
-
-type question =  {
-    question: string,
-    answers: string[],
-    negative_answers?: string[]
-}
-
-type response = {
-    answer : string,
-    cost : number,
-    input_tokens: number,
-    output_tokens: number,
-    time_taken: number
-}
 
 async function clientCall(prompt:string, model: model):Promise<response>{
     const client = new OpenAI({
@@ -31,15 +16,11 @@ async function clientCall(prompt:string, model: model):Promise<response>{
         "model": model.model,
         "messages": [
             {
-                "role": "system",
-                "content": prompt
-            },
-            {
                 "role": "user",
                 "content": [
                     {
                         "type": "text",
-                        "text": "hello"
+                        "text": prompt
                     }
                 ]
             }
@@ -70,7 +51,8 @@ export class ModelManager {
             cost: 0,
             time_taken: 0,
             input_tokens: 0,
-            output_tokens: 0
+            output_tokens: 0,
+            pending: true
         };
     } 
 
@@ -81,7 +63,7 @@ export class ModelManager {
         const number = Number(response.answer)
         if (Number.isNaN(number)){
             console.log("the evaluator gave" + number)
-            return 90;
+            return 0;
         } 
         return number
     }
@@ -106,6 +88,7 @@ export class ModelManager {
         const logFile = `${logDir}/${this.model.name}.log`;
 
         const log = `
+Time - ${new Date().toISOString()}
 Q - ${question.question}
 Answers - ${JSON.stringify(question.answers)}
 Negative Answers - ${JSON.stringify(question.negative_answers)}

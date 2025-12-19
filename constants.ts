@@ -1,9 +1,4 @@
-export type model = {
-    id: number,
-    name: string,
-    model: string,
-    reasoning: boolean
-}
+import type { model } from "./types"
 
 export const evaluator : model = {
     id: 1,
