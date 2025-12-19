@@ -5,7 +5,6 @@ import { models } from "./constants"
 import { ModelManager } from "./ModelManager"
 
 async function runTest(){
-    // Initialize all models with pending state
     const listStatus: currentStatus[] = models.map(model => ({
         id: model.id,
         model_name: model.name,
@@ -24,8 +23,6 @@ async function runTest(){
         const model = models[i]!
         const m = new ModelManager(model, q)
         const status = await m.runTest()
-        
-        // Update in-place
         listStatus[i] = { ...status, pending: false }
         run(listStatus)
     }

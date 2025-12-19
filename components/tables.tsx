@@ -44,7 +44,7 @@ export const TableProvider = ({ models }: { models: currentStatus[] }) => {
               <Col color="cyan" width={12}>${m.cost.toFixed(4)}</Col>
               <Col width={14}>{m.input_tokens.toLocaleString()}</Col>
               <Col width={14}>{m.output_tokens.toLocaleString()}</Col>
-              <Col width={10}>{m.time_taken.toFixed(1)}s</Col>
+              <Col width={10}>{m.time_taken.toFixed(1)}ms</Col>
             </>
           )}
         </Box>
@@ -57,7 +57,7 @@ export const TableProvider = ({ models }: { models: currentStatus[] }) => {
         <Col color="cyan" width={12}>${models.filter(m=>!m.pending).reduce((va,m)=>va+m.cost,0).toFixed(4)}</Col>
         <Col width={14}>{models.filter(m=>!m.pending).reduce((va,m)=>va+m.input_tokens,0).toLocaleString()}</Col>
         <Col width={14}>{models.filter(m=>!m.pending).reduce((va,m)=>va+m.output_tokens,0).toLocaleString()}</Col>
-        <Col width={10}>{models.filter(m=>!m.pending).reduce((va,m)=>va+m.time_taken,0).toFixed(1)}s</Col>
+        <Col width={10}>{models.filter(m=>!m.pending).reduce((va,m)=>va+m.time_taken,0).toFixed(1)}ms</Col>
       </Box>
     </Box>
   );
