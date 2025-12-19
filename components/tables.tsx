@@ -10,13 +10,13 @@ export const TableProvider = ({ models }: { models: currentStatus[] }) => {
           <Box width={20}>
             <Text>model_name</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>progress</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>accuracy</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>cost</Text>
           </Box>
         </Box>
@@ -25,13 +25,13 @@ export const TableProvider = ({ models }: { models: currentStatus[] }) => {
           <Box width={20}>
             <Text>{model.model_name}</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>{model.progress}</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>{model.accuracy}</Text>
           </Box>
-          <Box width={5}>
+          <Box width={10}>
             <Text>{model.cost}</Text>
           </Box>
         </Box>
