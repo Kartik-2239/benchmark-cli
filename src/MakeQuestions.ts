@@ -1,4 +1,4 @@
-import { QUESTION_SET_PATH, questionMaker, TOPIC } from "./src/constants/index"
+import { QUESTION_SET_PATH, questionMaker, TOPIC } from "./constants/index.ts"
 import { OpenAI } from "openai/client.js";
 import { z } from "zod";
 import fs from 'fs';

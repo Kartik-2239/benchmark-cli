@@ -1,0 +1,135 @@
+
+Time - 2025-12-20T12:16:56.227Z
+Q - Who is the captain of the Straw Hat Pirates?
+Answers - ["Monkey D. Luffy"]
+Negative Answers - ["Roronoa Zoro","Sanji","Nami"]
+Actual Answer - The captain of the Straw Hat Pirates is Monkey D. Luffy.
+Token Usage - input(21), output(131)
+Score - 100
+
+
+Time - 2025-12-20T12:17:01.420Z
+Q - What is the name of the sea where the Grand Line begins?
+Answers - ["East Blue"]
+Negative Answers - ["North Blue","South Blue","West Blue"]
+Actual Answer - The sea where the Grand Line begins is the **Red Line** surrounding Reverse Mountain.
+Token Usage - input(45), output(327)
+Score - 0
+
+
+Time - 2025-12-20T12:17:05.957Z
+Q - Which crew member wields the three-sword style?
+Answers - ["Roronoa Zoro"]
+Negative Answers - ["Sanji","Usopp","Franky"]
+Actual Answer - Roronoa Zoro wields the three-sword style.
+Token Usage - input(67), output(505)
+Score - 100
+
+
+Time - 2025-12-20T12:17:15.640Z
+Q - What power does the Devil Fruit known as the Gomu Gomu no Mi grant its user?
+Answers - ["Rubber-like elasticity"]
+Negative Answers - ["Fire manipulation","Ice creation","Invisibility"]
+Actual Answer - The Gomu Gomu no Mi grants its user a body with the properties of rubber, allowing them to stretch, deform, and become highly resistant to blunt impact.
+Token Usage - input(97), output(887)
+Score - 100
+
+
+Time - 2025-12-20T12:17:21.991Z
+Q - During the Marineford War, which character sacrifices himself to protect his crew?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Jinbe","Trafalgar Law"]
+Actual Answer - Whitebeard sacrifices himself to protect his crew during the Marineford War.
+Token Usage - input(123), output(1090)
+Score - 0
+
+
+Time - 2025-12-20T12:38:11.061Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(22), output(83)
+Score - 100
+
+
+Time - 2025-12-20T12:38:14.739Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen drop Ender Pearls when killed.
+Token Usage - input(43), output(178)
+Score - 100
+
+
+Time - 2025-12-20T12:38:21.255Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item's durability decreases by giving it a chance to avoid taking wear damage when used.
+Token Usage - input(68), output(434)
+Score - 100
+
+
+Time - 2025-12-20T12:38:24.176Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - In Minecraft Java Edition 1.19, the maximum build height (Y-coordinate) a player can reach is 320.
+Token Usage - input(105), output(528)
+Score - 100
+
+
+Time - 2025-12-20T12:38:31.833Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Pine is not a type of wood in Minecraft, as the common dark green wood is correctly called Spruce.
+Token Usage - input(129), output(817)
+Score - 5
+
+
+Time - 2025-12-20T12:39:50.745Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(22), output(101)
+Score - 100
+
+
+Time - 2025-12-20T12:39:55.645Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen drop Ender Pearls when killed.
+Token Usage - input(43), output(265)
+Score - 100
+
+
+Time - 2025-12-20T12:40:01.394Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The enchantment that reduces the rate at which an item's durability decreases is **Unbreaking**.
+Token Usage - input(68), output(507)
+Score - 100
+
+
+Time - 2025-12-20T12:40:05.363Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - As of Minecraft Java Edition 1.19, the maximum build height (Y-coordinate) a player can reach is 319.
+Token Usage - input(105), output(605)
+Score - 0
+
+
+Time - 2025-12-20T12:40:12.487Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - "**Nether Wood**" is not a specific type of wood in Minecraft, as wood types in the game are named after specific tree species like Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, Mangrove, Cherry, Bamboo, Crimson, or Warped.
+Token Usage - input(129), output(856)
+Score - 0
+

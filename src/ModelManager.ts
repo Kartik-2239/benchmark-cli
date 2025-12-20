@@ -1,10 +1,10 @@
-import type { currentStatus, model, question, response } from "./src/types"
-import { evaluator, models, QUESTION_SET_PATH, pricings } from "./src/constants/index"
+import type { currentStatus, model, question, response } from "./types"
+import { evaluator, models, QUESTION_SET_PATH, pricings } from "./constants/index"
 import { OpenAI } from "openai/client.js";
 import fs from 'fs';
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import run from "./src/components/tables";
+import run from "./components/tables";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -208,6 +208,10 @@ export async function runTest(){
     
     for (let i = 0; i < models.length; i++) {
         const model = models[i]!
+        if (!fs.existsSync(QUESTION_SET_PATH)){
+            console.log("Question set already exists");
+            return;
+        }
         const q = JSON.parse(fs.readFileSync(QUESTION_SET_PATH, "utf8"))
         const m = new ModelManager(model, q)
         // const status = await m.runTest()

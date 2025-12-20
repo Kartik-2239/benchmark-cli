@@ -1,0 +1,225 @@
+
+Time - 2025-12-20T12:15:52.810Z
+Q - Who is the captain of the Straw Hat Pirates?
+Answers - ["Monkey D. Luffy"]
+Negative Answers - ["Roronoa Zoro","Sanji","Nami"]
+Actual Answer - Monkey D. Luffy is the captain of the Straw Hat Pirates.
+Token Usage - input(32), output(15)
+Score - 100
+
+
+Time - 2025-12-20T12:15:54.156Z
+Q - What is the name of the sea where the Grand Line begins?
+Answers - ["East Blue"]
+Negative Answers - ["North Blue","South Blue","West Blue"]
+Actual Answer - The Grand Line begins at the twin capes where the Calm Belt and the East Blue sea meet.
+Token Usage - input(67), output(37)
+Score - 95
+
+
+Time - 2025-12-20T12:15:55.506Z
+Q - Which crew member wields the three-sword style?
+Answers - ["Roronoa Zoro"]
+Negative Answers - ["Sanji","Usopp","Franky"]
+Actual Answer - Roronoa Zoro is the crew member who wields the three-sword style.
+Token Usage - input(100), output(56)
+Score - 100
+
+
+Time - 2025-12-20T12:15:57.597Z
+Q - What power does the Devil Fruit known as the Gomu Gomu no Mi grant its user?
+Answers - ["Rubber-like elasticity"]
+Negative Answers - ["Fire manipulation","Ice creation","Invisibility"]
+Actual Answer - The Gomu Gomu no Mi transforms its user’s body into rubber, granting stretching, bouncing and immunity to blunt-force impacts.
+Token Usage - input(143), output(85)
+Score - 100
+
+
+Time - 2025-12-20T12:15:58.904Z
+Q - During the Marineford War, which character sacrifices himself to protect his crew?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Jinbe","Trafalgar Law"]
+Actual Answer - Portgas D. Ace sacrifices himself to shield Luffy from Akainu's magma fist during the Marineford War.
+Token Usage - input(180), output(109)
+Score - 100
+
+
+Time - 2025-12-20T12:34:50.441Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(32), output(12)
+Score - 100
+
+
+Time - 2025-12-20T12:34:51.635Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Ender Pearls are dropped by **Endermen** when killed.
+Token Usage - input(64), output(28)
+Score - 100
+
+
+Time - 2025-12-20T12:34:52.738Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The Unbreaking enchantment reduces how quickly an item loses durability.
+Token Usage - input(100), output(42)
+Score - 100
+
+
+Time - 2025-12-20T12:34:54.649Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - As of Minecraft Java Edition 1.19, the upper build limit is world height Y=319.
+Token Usage - input(148), output(64)
+Score - 0
+
+
+Time - 2025-12-20T12:34:56.090Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Stripped oak is not a separate type of wood in Minecraft.
+Token Usage - input(183), output(78)
+Score - 0
+
+
+Time - 2025-12-20T12:37:32.263Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - A Nether portal requires obsidian blocks to be constructed.
+Token Usage - input(32), output(12)
+Score - 100
+
+
+Time - 2025-12-20T12:37:33.792Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen drop Ender Pearls when killed.
+Token Usage - input(64), output(24)
+Score - 94
+
+
+Time - 2025-12-20T12:37:35.415Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(100), output(43)
+Score - 100
+
+
+Time - 2025-12-20T12:37:37.436Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - As of Minecraft Java Edition 1.19, the highest Y-coordinate at which any block can be placed is Y 319.
+Token Usage - input(148), output(70)
+Score - 5
+
+
+Time - 2025-12-20T12:37:40.426Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Crimson Hyphae is NOT a type of wood in Minecraft—it is a Nether stem block variant.
+Token Usage - input(183), output(93)
+Score - 10
+
+
+Time - 2025-12-20T12:38:56.428Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - You need obsidian blocks to build a Nether portal.
+Token Usage - input(32), output(12)
+Score - 100
+
+
+Time - 2025-12-20T12:38:58.028Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Ender Pearls are dropped only by Endermen when killed.
+Token Usage - input(64), output(27)
+Score - 100
+
+
+Time - 2025-12-20T12:38:59.573Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(100), output(46)
+Score - 100
+
+
+Time - 2025-12-20T12:39:01.207Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - In Java Edition 1.19, the top of the world’s buildable area is Y 319.
+Token Usage - input(148), output(69)
+Score - 5
+
+
+Time - 2025-12-20T12:39:02.774Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Gel wood is NOT a type of wood in Minecraft.
+Token Usage - input(183), output(82)
+Score - 0
+
+
+Time - 2025-12-20T13:03:03.908Z
+Q - Who is the author of the One Piece manga?
+Answers - ["Eiichiro Oda"]
+Negative Answers - ["Akira Toriyama","Masashi Kishimoto","Tite Kubo"]
+Actual Answer - The author of the One Piece manga is Eiichiro Oda.
+Token Usage - input(32), output(15)
+Score - 100
+
+
+Time - 2025-12-20T13:03:05.116Z
+Q - What is the name of Monkey D. Luffy's first ship?
+Answers - ["Going Merry"]
+Negative Answers - ["Thousand Sunny","Red Force","Moby Dick"]
+Actual Answer - Monkey D. Luffy's first ship is named the Going Merry.
+Token Usage - input(68), output(30)
+Score - 100
+
+
+Time - 2025-12-20T13:03:06.715Z
+Q - Which pirate is known as the "Surgeon of Death"?
+Answers - ["Trafalgar Law"]
+Negative Answers - ["Eustass Kid","Portgas D. Ace","Jinbei"]
+Actual Answer - The pirate known as the "Surgeon of Death" is Trafalgar D. Water Law.
+Token Usage - input(102), output(52)
+Score - 95
+
+
+Time - 2025-12-20T13:03:07.900Z
+Q - What is the name of the ultimate treasure that the Straw Hat Pirates are searching for?
+Answers - ["One Piece"]
+Negative Answers - ["Paradise","Roger's Log Pose","Poneglyph"]
+Actual Answer - The Straw Hat Pirates are searching for the ultimate treasure known as the One Piece.
+Token Usage - input(141), output(69)
+Score - 100
+
+
+Time - 2025-12-20T13:03:09.412Z
+Q - Which crew member originally possessed the Mera Mera no Mi before Sabo?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Monkey D. Luffy","Sanji"]
+Actual Answer - The Mera Mera no Mi was originally possessed by Portgas D. Ace before Sabo.
+Token Usage - input(179), output(90)
+Score - 100
+

@@ -1,0 +1,225 @@
+
+Time - 2025-12-20T12:16:00.818Z
+Q - Who is the captain of the Straw Hat Pirates?
+Answers - ["Monkey D. Luffy"]
+Negative Answers - ["Roronoa Zoro","Sanji","Nami"]
+Actual Answer -  The captain of the Straw Hat Pirates is Monkey D. Luffy.
+Token Usage - input(41), output(82)
+Score - 95
+
+
+Time - 2025-12-20T12:16:25.138Z
+Q - What is the name of the sea where the Grand Line begins?
+Answers - ["East Blue"]
+Negative Answers - ["North Blue","South Blue","West Blue"]
+Actual Answer -  The Grand Line begins at **Reverse Mountain**, where the four Blues converge.
+Token Usage - input(85), output(2378)
+Score - 0
+
+
+Time - 2025-12-20T12:16:27.718Z
+Q - Which crew member wields the three-sword style?
+Answers - ["Roronoa Zoro"]
+Negative Answers - ["Sanji","Usopp","Franky"]
+Actual Answer -  Roronoa Zoro, the swordsman of the Straw Hat Pirates, wields the three-sword style.
+Token Usage - input(127), output(2495)
+Score - 100
+
+
+Time - 2025-12-20T12:16:34.714Z
+Q - What power does the Devil Fruit known as the Gomu Gomu no Mi grant its user?
+Answers - ["Rubber-like elasticity"]
+Negative Answers - ["Fire manipulation","Ice creation","Invisibility"]
+Actual Answer -  The Gomu Gomu no Mi grants its user a rubber-like body with the ability to stretch and immunity to electricity and blunt force attacks.
+Token Usage - input(179), output(3039)
+Score - 95
+
+
+Time - 2025-12-20T12:16:40.957Z
+Q - During the Marineford War, which character sacrifices himself to protect his crew?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Jinbe","Trafalgar Law"]
+Actual Answer -  Whitebeard sacrifices himself to protect his crew, the Whitebeard Pirates, during the Marineford War.
+Token Usage - input(225), output(3534)
+Score - 0
+
+
+Time - 2025-12-20T12:34:58.977Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer -  Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(41), output(135)
+Score - 100
+
+
+Time - 2025-12-20T12:35:02.749Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer -  Endermen drop Ender Pearls when killed.
+Token Usage - input(82), output(378)
+Score - 95
+
+
+Time - 2025-12-20T12:35:05.164Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer -  The Unbreaking enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(127), output(513)
+Score - 100
+
+
+Time - 2025-12-20T12:35:11.913Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer -  In Minecraft Java Edition 1.19, the maximum build height is Y=320.
+Token Usage - input(184), output(1063)
+Score - 100
+
+
+Time - 2025-12-20T12:35:23.511Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer -  Since no options were provided, I cannot answer which specific item is not wood, but Diamond is definitely not a type of wood in Minecraft.
+Token Usage - input(228), output(2095)
+Score - 5
+
+
+Time - 2025-12-20T12:37:43.483Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer -  Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(41), output(191)
+Score - 100
+
+
+Time - 2025-12-20T12:37:46.042Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer -  Endermen drop Ender Pearls when killed.
+Token Usage - input(82), output(304)
+Score - 100
+
+
+Time - 2025-12-20T12:37:48.819Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer -  Unbreaking is the enchantment that reduces the rate at which an item's durability decreases.
+Token Usage - input(127), output(476)
+Score - 100
+
+
+Time - 2025-12-20T12:37:53.334Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer -  The maximum build height in Minecraft Java Edition 1.19 is Y=320.
+Token Usage - input(184), output(821)
+Score - 100
+
+
+Time - 2025-12-20T12:37:58.605Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer -  You haven't provided any options for me to evaluate.
+Token Usage - input(228), output(1213)
+Score - 0
+
+
+Time - 2025-12-20T12:39:06.141Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer -  Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(41), output(194)
+Score - 100
+
+
+Time - 2025-12-20T12:39:08.591Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer -  Endermen drop Ender Pearls when killed.
+Token Usage - input(82), output(304)
+Score - 100
+
+
+Time - 2025-12-20T12:39:10.598Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer -  The Unbreaking enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(127), output(402)
+Score - 100
+
+
+Time - 2025-12-20T12:39:14.134Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer -  In Minecraft Java Edition 1.19, the maximum build height is Y‑level 320.
+Token Usage - input(184), output(597)
+Score - 100
+
+
+Time - 2025-12-20T12:39:21.463Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer -  Since you haven't provided any options, I cannot identify which item is not a wood type in Minecraft.
+Token Usage - input(228), output(1239)
+Score - 0
+
+
+Time - 2025-12-20T13:03:12.603Z
+Q - Who is the author of the One Piece manga?
+Answers - ["Eiichiro Oda"]
+Negative Answers - ["Akira Toriyama","Masashi Kishimoto","Tite Kubo"]
+Actual Answer -  The author of the One Piece manga is Eiichiro Oda.
+Token Usage - input(41), output(214)
+Score - 100
+
+
+Time - 2025-12-20T13:03:15.401Z
+Q - What is the name of Monkey D. Luffy's first ship?
+Answers - ["Going Merry"]
+Negative Answers - ["Thousand Sunny","Red Force","Moby Dick"]
+Actual Answer -  Monkey D. Luffy's first ship is called the Going Merry.
+Token Usage - input(86), output(404)
+Score - 100
+
+
+Time - 2025-12-20T13:03:18.235Z
+Q - Which pirate is known as the "Surgeon of Death"?
+Answers - ["Trafalgar Law"]
+Negative Answers - ["Eustass Kid","Portgas D. Ace","Jinbei"]
+Actual Answer -  Trafalgar Law, captain of the Heart Pirates, is known as the "Surgeon of Death."
+Token Usage - input(129), output(574)
+Score - 100
+
+
+Time - 2025-12-20T13:03:20.197Z
+Q - What is the name of the ultimate treasure that the Straw Hat Pirates are searching for?
+Answers - ["One Piece"]
+Negative Answers - ["Paradise","Roger's Log Pose","Poneglyph"]
+Actual Answer -  The ultimate treasure the Straw Hat Pirates are searching for is called One Piece.
+Token Usage - input(177), output(683)
+Score - 100
+
+
+Time - 2025-12-20T13:03:26.319Z
+Q - Which crew member originally possessed the Mera Mera no Mi before Sabo?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Monkey D. Luffy","Sanji"]
+Actual Answer -  Portgas D. Ace originally possessed the Mera Mera no Mi before Sabo.
+Token Usage - input(224), output(1192)
+Score - 100
+

@@ -1,0 +1,297 @@
+
+Time - 2025-12-20T12:14:51.975Z
+Q - What does the acronym AI stand for?
+Answers - ["Artificial Intelligence"]
+Negative Answers - ["Automated Interface","Algorithmic Integration","Artificial Infrastructure"]
+Actual Answer - AI stands for **Artificial Intelligence**.
+Token Usage - input(83), output(60)
+Score - 100
+
+
+Time - 2025-12-20T12:14:53.658Z
+Q - Which 1956 conference is considered the birth of AI as a field?
+Answers - ["Dartmouth Workshop","Dartmouth Summer Research Project on Artificial Intelligence"]
+Negative Answers - ["Turing Conference","MIT AI Summit","Stanford AI Symposium"]
+Actual Answer - The 1956 Dartmouth Summer Research Project on Artificial Intelligence—commonly referred to as the Dartmouth Conference—is regarded as the event that launched AI as a distinct field.
+Token Usage - input(173), output(165)
+Score - 100
+
+
+Time - 2025-12-20T12:14:55.046Z
+Q - Who coined the term "Artificial Intelligence"?
+Answers - ["John McCarthy"]
+Negative Answers - ["Alan Turing","Marvin Minsky","Herbert A. Simon"]
+Actual Answer - John McCarthy coined the term “Artificial Intelligence” in 1955 when he proposed the Dartmouth Summer Research Project on AI.
+Token Usage - input(256), output(265)
+Score - 100
+
+
+Time - 2025-12-20T12:14:56.571Z
+Q - What is the primary difference between supervised and unsupervised learning?
+Answers - ["Supervised learning uses labeled data while unsupervised learning does not."]
+Negative Answers - ["Supervised learning is only for classification tasks","Unsupervised learning always produces higher accuracy","Supervised learning does not require a loss function"]
+Actual Answer - Supervised learning uses labeled data to train models for predicting known outputs, whereas unsupervised learning works with unlabeled data to discover underlying patterns or structures.
+Token Usage - input(344), output(377)
+Score - 95
+
+
+Time - 2025-12-20T12:14:57.980Z
+Q - Which algorithm is commonly used for image classification tasks?
+Answers - ["Convolutional Neural Network (CNN)"]
+Negative Answers - ["K-Nearest Neighbors (KNN)","Linear Regression","Apriori Algorithm"]
+Actual Answer - Convolutional Neural Networks (CNNs) are the most commonly used algorithm for image classification tasks.
+Token Usage - input(429), output(470)
+Score - 100
+
+
+Time - 2025-12-20T12:14:59.581Z
+Q - What does the term "overfitting" refer to in machine learning?
+Answers - ["When a model learns the training data too well and fails to generalize to new data."]
+Negative Answers - ["When a model has too few parameters","When a model runs slower than expected","When a model uses unsupervised learning"]
+Actual Answer - Overfitting occurs when a model learns the training data’s noise and specific patterns too well, resulting in poor generalization to new, unseen data.
+Token Usage - input(519), output(549)
+Score - 100
+
+
+Time - 2025-12-20T12:15:01.128Z
+Q - Which of the following is an example of a generative AI model?
+Answers - ["GPT (Generative Pre‑trained Transformer)"]
+Negative Answers - ["Support Vector Machine","Decision Tree","K-Means Clustering"]
+Actual Answer - An example of a generative AI model is OpenAI’s GPT‑4, which can create coherent text responses from prompts.
+Token Usage - input(608), output(668)
+Score - 98
+
+
+Time - 2025-12-20T12:15:02.830Z
+Q - What is the purpose of a loss function in training neural networks?
+Answers - ["To quantify the difference between predicted outputs and true targets."]
+Negative Answers - ["To increase the number of layers","To shuffle the training data","To select the optimizer automatically"]
+Actual Answer - A loss function quantifies the discrepancy between the network’s predictions and the true targets, providing a scalar error signal that guides the optimizer to adjust the model’s parameters to minimize that error.
+Token Usage - input(696), output(772)
+Score - 100
+
+
+Time - 2025-12-20T12:15:40.844Z
+Q - Who is the captain of the Straw Hat Pirates?
+Answers - ["Monkey D. Luffy"]
+Negative Answers - ["Roronoa Zoro","Sanji","Nami"]
+Actual Answer - The captain of the Straw Hat Pirates is Monkey D Luffy.
+Token Usage - input(85), output(103)
+Score - 100
+
+
+Time - 2025-12-20T12:15:43.422Z
+Q - What is the name of the sea where the Grand Line begins?
+Answers - ["East Blue"]
+Negative Answers - ["North Blue","South Blue","West Blue"]
+Actual Answer - The Grand Line begins as you exit the East Blue, entering it via Reverse Mountain.
+Token Usage - input(173), output(490)
+Score - 95
+
+
+Time - 2025-12-20T12:15:44.972Z
+Q - Which crew member wields the three-sword style?
+Answers - ["Roronoa Zoro"]
+Negative Answers - ["Sanji","Usopp","Franky"]
+Actual Answer - Roronoa Zoro, the swordsman of the Straw Hat Pirates, wields the three‑sword (Santoryu) style.
+Token Usage - input(259), output(605)
+Score - 100
+
+
+Time - 2025-12-20T12:15:47.254Z
+Q - What power does the Devil Fruit known as the Gomu Gomu no Mi grant its user?
+Answers - ["Rubber-like elasticity"]
+Negative Answers - ["Fire manipulation","Ice creation","Invisibility"]
+Actual Answer - The Gomu Gomu no Mi is a Paramecia Devil Fruit that turns its eater’s body into rubber, granting them stretchable limbs, elasticity, and immunity to most blunt-force attacks.
+Token Usage - input(353), output(737)
+Score - 95
+
+
+Time - 2025-12-20T12:15:51.510Z
+Q - During the Marineford War, which character sacrifices himself to protect his crew?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Jinbe","Trafalgar Law"]
+Actual Answer - During the Marineford War, Edward Newgate—known as Whitebeard—sacrifices his life to protect his crew.
+Token Usage - input(443), output(1339)
+Score - 5
+
+
+Time - 2025-12-20T12:34:41.299Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(85), output(88)
+Score - 100
+
+
+Time - 2025-12-20T12:34:43.329Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen are the mob that drop Ender Pearls when they’re killed.
+Token Usage - input(170), output(234)
+Score - 97
+
+
+Time - 2025-12-20T12:34:44.706Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(258), output(311)
+Score - 100
+
+
+Time - 2025-12-20T12:34:46.728Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - In Minecraft Java Edition 1.19, the highest buildable Y‑coordinate is 319.
+Token Usage - input(359), output(498)
+Score - 10
+
+
+Time - 2025-12-20T12:34:48.767Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - I can’t determine which one isn’t a wood type without seeing the list of options you’re choosing from.
+Token Usage - input(447), output(650)
+Score - 5
+
+
+Time - 2025-12-20T12:37:21.717Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are the required material to build a Nether portal.
+Token Usage - input(85), output(92)
+Score - 100
+
+
+Time - 2025-12-20T12:37:23.615Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen drop Ender Pearls when they’re defeated.
+Token Usage - input(170), output(189)
+Score - 100
+
+
+Time - 2025-12-20T12:37:25.017Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item’s durability is consumed.
+Token Usage - input(258), output(285)
+Score - 100
+
+
+Time - 2025-12-20T12:37:27.998Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - The highest Y‑coordinate you can build at in Minecraft Java Edition 1.19 is Y = 319.
+Token Usage - input(359), output(540)
+Score - 15
+
+
+Time - 2025-12-20T12:37:30.787Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Stone is not a type of wood in Minecraft.
+Token Usage - input(447), output(744)
+Score - 0
+
+
+Time - 2025-12-20T12:38:48.730Z
+Q - What block is required to construct a Nether portal?
+Answers - ["Obsidian"]
+Negative Answers - ["Stone","Dirt","Sand"]
+Actual Answer - Obsidian blocks are required to construct a Nether portal.
+Token Usage - input(85), output(65)
+Score - 100
+
+
+Time - 2025-12-20T12:38:50.228Z
+Q - Which mob drops Ender Pearls when killed?
+Answers - ["Enderman"]
+Negative Answers - ["Zombie","Creeper","Skeleton"]
+Actual Answer - Endermen drop Ender Pearls when they are killed.
+Token Usage - input(170), output(166)
+Score - 95
+
+
+Time - 2025-12-20T12:38:51.449Z
+Q - Which enchantment reduces the rate at which an item's durability decreases?
+Answers - ["Unbreaking"]
+Negative Answers - ["Silk Touch","Fortune","Knockback"]
+Actual Answer - The **Unbreaking** enchantment reduces the rate at which an item's durability decreases.
+Token Usage - input(258), output(272)
+Score - 100
+
+
+Time - 2025-12-20T12:38:53.000Z
+Q - As of Minecraft Java Edition 1.19, what is the maximum build height (Y‑coordinate) a player can reach?
+Answers - ["320"]
+Negative Answers - ["256","300","384"]
+Actual Answer - As of Minecraft Java Edition 1.19, the highest Y‑coordinate a player can build to is 320.
+Token Usage - input(359), output(408)
+Score - 100
+
+
+Time - 2025-12-20T12:38:55.016Z
+Q - Which of the following is NOT a type of wood in Minecraft?
+Answers - ["Quartz"]
+Negative Answers - ["Oak","Birch","Spruce"]
+Actual Answer - Pine is not a type of wood in Minecraft.
+Token Usage - input(447), output(571)
+Score - 5
+
+
+Time - 2025-12-20T13:02:52.279Z
+Q - Who is the author of the One Piece manga?
+Answers - ["Eiichiro Oda"]
+Negative Answers - ["Akira Toriyama","Masashi Kishimoto","Tite Kubo"]
+Actual Answer - Eiichiro Oda is the creator and author of the *One Piece* manga.
+Token Usage - input(85), output(75)
+Score - 100
+
+
+Time - 2025-12-20T13:02:54.087Z
+Q - What is the name of Monkey D. Luffy's first ship?
+Answers - ["Going Merry"]
+Negative Answers - ["Thousand Sunny","Red Force","Moby Dick"]
+Actual Answer - Monkey D Luffy’s first ship was the Going Merry.
+Token Usage - input(174), output(278)
+Score - 100
+
+
+Time - 2025-12-20T13:02:59.432Z
+Q - Which pirate is known as the "Surgeon of Death"?
+Answers - ["Trafalgar Law"]
+Negative Answers - ["Eustass Kid","Portgas D. Ace","Jinbei"]
+Actual Answer - The pirate nicknamed the “Surgeon of Death” was Edward Low.
+Token Usage - input(262), output(1249)
+Score - 0
+
+
+Time - 2025-12-20T13:03:01.022Z
+Q - What is the name of the ultimate treasure that the Straw Hat Pirates are searching for?
+Answers - ["One Piece"]
+Negative Answers - ["Paradise","Roger's Log Pose","Poneglyph"]
+Actual Answer - The ultimate treasure the Straw Hat Pirates are seeking is called the **One Piece**.
+Token Usage - input(354), output(1336)
+Score - 100
+
+
+Time - 2025-12-20T13:03:02.661Z
+Q - Which crew member originally possessed the Mera Mera no Mi before Sabo?
+Answers - ["Portgas D. Ace"]
+Negative Answers - ["Sabo","Monkey D. Luffy","Sanji"]
+Actual Answer - Portgas D. Ace was the original holder of the Mera Mera no Mi before Sabo obtained it.
+Token Usage - input(445), output(1499)
+Score - 100
+
