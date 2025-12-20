@@ -1,4 +1,8 @@
-import type { model } from "./types"
+import type { model } from "../types"
+
+export const QUESTION_SET_PATH = "./questions/test.json";
+export const TOPIC = "AI";
+
 
 export const evaluator : model = {
     id: 1,

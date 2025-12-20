@@ -1,10 +1,10 @@
-import type { currentStatus, model, question, response } from "./types"
-import { evaluator } from "./constants"
+import type { currentStatus, model, question, response } from "./src/types"
+import { evaluator, models, QUESTION_SET_PATH, pricings } from "./src/constants/index"
 import { OpenAI } from "openai/client.js";
 import fs from 'fs';
-import { pricings } from './constants'
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import run from "./src/components/tables";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -188,13 +188,34 @@ Score - ${correctness}
             this.logger(q, res.answer ?? "", correctness);
             yield {...this.status};
         }
-
-        // return this.status;
     }
 }
 
-
-// if (models[0]){
-//     const model = new ModelManager(models[0],qusetionSet)
-//     model.runTest()
-// }
+export async function runTest(){
+    const listStatus: currentStatus[] = models.map((model: model) => ({
+        id: model.id,
+        model_name: model.name,
+        progress: 0,
+        accuracy: 0,
+        input_tokens: 0,
+        output_tokens: 0,
+        cost: 0,
+        time_taken: 0,
+        pending: true
+    }))
+    
+    run(listStatus)
+    
+    for (let i = 0; i < models.length; i++) {
+        const model = models[i]!
+        const q = JSON.parse(fs.readFileSync(QUESTION_SET_PATH, "utf8"))
+        const m = new ModelManager(model, q)
+        // const status = await m.runTest()
+        for await (const status of m.runTest()) {
+            listStatus[i] = { ...status, pending: false }
+            run(listStatus)
+        }
+        // listStatus[i] = { ...status, pending: false }
+        // run(listStatus)
+    }
+}

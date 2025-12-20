@@ -13,7 +13,7 @@
     "benchmark-cli": "index.ts"
   },
   "scripts": {
-    "start": "bun run index.ts"
+    "start": "bun run bin/index.ts"
   },
   "dependencies": {
     "@openrouter/ai-sdk-provider": "^1.5.4",
