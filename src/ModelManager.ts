@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 async function clientCall(prompt:string, model: model):Promise<response>{
     const client = new OpenAI({
         baseURL: BASE_URL,
-        apiKey: process.env.NEBIUS_API_KEY || process.env.OPENAI_API_KEY,
+        apiKey: process.env.OPENROUTER_API_KEY ||process.env.NEBIUS_API_KEY,
     });
     const c1 = performance.now()
     const res = await client.chat.completions.create({
@@ -85,7 +85,7 @@ export class ModelManager {
     }
 
     logger(question: question, answer: string, correctness: number) {
-        const logDir = `${__dirname}/logs`;
+        const logDir = `${__dirname}/../logs`;
         if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 
         const logFile = `${logDir}/${this.model.name}.log`;
@@ -206,7 +206,7 @@ export async function runTest(){
     
     run(listStatus)
     
-    for (let i = 0; i < models.length; i++) {
+    for (let i = 0; i < 2; i++) {
         const model = models[i]!
         if (!fs.existsSync(QUESTION_SET_PATH)){
             console.log("Question set already exists");

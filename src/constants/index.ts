@@ -2,28 +2,29 @@ import type { model } from "../types"
 
 export const QUESTION_SET_PATH = "./questions/test.json";
 export const TOPIC = "AI";
-export const BASE_URL = "https://api.tokenfactory.nebius.com/v1/";
+// export const BASE_URL = "https://api.tokenfactory.nebius.com/v1/";
+export const BASE_URL = "https://openrouter.ai/api/v1";
 
 
 export const evaluator : model = {
     id: 1,
-    name: "gpt-oss-120b",
-    model: "openai/gpt-oss-120b",
+    name: "nemotron-3-nano-30b-a3b:free",
+    model: "nvidia/nemotron-3-nano-30b-a3b:free",
     reasoning: true
 }
 
 export const questionMaker:model = {
     id: 1,
-    name: "gpt-oss-120b",
-    model: "openai/gpt-oss-120b",
+    name: "nemotron-3-nano-30b-a3b:free",
+    model: "nvidia/nemotron-3-nano-30b-a3b:free",
     reasoning: true
 }
 
 export var models : model[] = [
     {
         id: 1,
-        name: "gpt-oss-120b",
-        model: "openai/gpt-oss-120b",
+        name: "nemotron-3-nano-30b-a3b:free",
+        model: "nvidia/nemotron-3-nano-30b-a3b:free",
         reasoning: true
     },
     {

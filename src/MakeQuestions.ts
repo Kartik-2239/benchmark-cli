@@ -23,7 +23,7 @@ export async function MakeQuestions(topic?: string, numberOfQuestions?: number){
 
     const client = new OpenAI({
         baseURL: BASE_URL,
-        apiKey: process.env.NEBIUS_API_KEY || process.env.OPENAI_API_KEY,
+        apiKey: process.env.NEBIUS_API_KEY || process.env.OPENROUTER_API_KEY,
     });
 
     const Question = z.object({
