@@ -1,0 +1,52 @@
+{
+  "_comment": "Single cache.json file containing all cached entries. Key = modelName::questionSignatureHash. Rewrite after each question completes for crash safety.",
+
+  "cacheVersion": 1,
+  "questionSetId": "questions/test.json",
+  "questionSetHash": "sha1:5e0f3b6d8b0c",
+  "evaluator": {
+    "name": "gpt-oss-120b",
+    "model": "openai/gpt-oss-120b"
+  },
+
+  "entries": {
+    "gpt-oss-120b::a1b2c3d4e5f6": {
+      "question": "what the f are you?????",
+      "answers": ["I am an AI assistant", "a software-based system"],
+      "negative_answers": ["a human", "a physical object"],
+      "answer": "I am an AI assistant designed to help you.",
+      "input_tokens": 42,
+      "output_tokens": 18,
+      "cost": 0.0000288,
+      "time_taken": 312.4,
+      "evaluationScore": 96,
+      "timestamp": "2025-12-20T00:00:00.000Z"
+    },
+
+    "gpt-oss-120b::f6e5d4c3b2a1": {
+      "question": "how do you learn new things?",
+      "answers": ["by training on data", "through model updates"],
+      "negative_answers": ["by sleeping", "by feeling emotions"],
+      "answer": "I learn through training on data.",
+      "input_tokens": 38,
+      "output_tokens": 12,
+      "cost": 0.0000204,
+      "time_taken": 280.1,
+      "evaluationScore": 92,
+      "timestamp": "2025-12-20T00:00:01.000Z"
+    },
+
+    "Kimi-K2-Instruct::a1b2c3d4e5f6": {
+      "question": "what the f are you?????",
+      "answers": ["I am an AI assistant", "a software-based system"],
+      "negative_answers": ["a human", "a physical object"],
+      "answer": "I'm an AI, a software-based system here to assist.",
+      "input_tokens": 45,
+      "output_tokens": 20,
+      "cost": 0.0000712,
+      "time_taken": 450.2,
+      "evaluationScore": 94,
+      "timestamp": "2025-12-20T00:01:00.000Z"
+    }
+  }
+}

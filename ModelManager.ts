@@ -5,6 +5,11 @@ import { models } from "./constants";
 import { OpenAI } from "openai/client.js";
 import fs from 'fs';
 import { pricings } from './constants'
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 async function clientCall(prompt:string, model: model):Promise<response>{
     const client = new OpenAI({
@@ -82,7 +87,7 @@ export class ModelManager {
     }
 
     logger(question: question, answer: string, correctness: number) {
-        const logDir = "/Users/kartikkannan/Desktop/benchmark/benchmark-cli/logs";
+        const logDir = `${__dirname}/logs`;
         if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 
         const logFile = `${logDir}/${this.model.name}.log`;
@@ -99,31 +104,94 @@ Score - ${correctness}
         fs.appendFileSync(logFile, log + "\n");
     }
 
+    checkCache(question: question) {
+        const cacheDir = `${__dirname}/cache`;
+        const cacheFile = `${cacheDir}/cache.json`;
+        
+        if (!fs.existsSync(cacheFile)) return null;
+        const cache = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+        const key = `${this.model.name}::${this.hashQuestion(question)}`;
+        return cache.entries[key] ?? null;
+    }
+
+    hashQuestion(question: question): string {
+        const normalized = JSON.stringify({
+            question: question.question.trim().toLowerCase(),
+            answers: [...question.answers].map(a => a.trim().toLowerCase()).sort(),
+            negative_answers: (question.negative_answers ?? []).map(a => a.trim().toLowerCase()).sort()
+        });
+        return Buffer.from(normalized).toString('base64url').slice(0, 16);
+    }
+
+    writeCache(question: question, result: { answer: string; input_tokens: number; output_tokens: number; cost: number; time_taken: number }, evaluationScore: number) {
+        const cacheDir = "/Users/kartikkannan/Desktop/benchmark/benchmark-cli/cache";
+        if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
+
+        const cacheFile = `${cacheDir}/cache.json`;
+        let cache = { cacheVersion: 1, entries: {} as Record<string, any> };
+
+        if (fs.existsSync(cacheFile)) {
+            cache = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+        }
+
+        const key = `${this.model.name}::${this.hashQuestion(question)}`;
+        cache.entries[key] = {
+            question: question.question,
+            answers: question.answers,
+            negative_answers: question.negative_answers,
+            answer: result.answer,
+            input_tokens: result.input_tokens,
+            output_tokens: result.output_tokens,
+            cost: result.cost,
+            time_taken: result.time_taken,
+            evaluationScore,
+            timestamp: new Date().toISOString()
+        };
+
+        fs.writeFileSync(cacheFile, JSON.stringify(cache, null, 2), "utf8");
+    }
 
     async runTest(){
         for (const q of this.questions){
-            const res = await this.apiCall(q)
-            // const correctness = this.correctness(q, res.answer)
-            const correctness:number = await this.callEvaluator(q,res.answer)
+            //check
+            const cached = this.checkCache(q);
+            
+            let res: { answer: string; input_tokens: number; output_tokens: number; cost: number; time_taken: number };
+            let correctness: number;
+
+            if (cached) {
+                res = {
+                    answer: cached.answer,
+                    input_tokens: cached.input_tokens,
+                    output_tokens: cached.output_tokens,
+                    cost: cached.cost,
+                    time_taken: cached.time_taken
+                };
+                correctness = cached.evaluationScore;
+            } else {
+                res = await this.apiCall(q);
+                correctness = await this.callEvaluator(q, res.answer);
+                
+                this.writeCache(q, res, correctness);
+            }
+
             this.status = {
                 ...this.status,
-                progress : (this.questions.indexOf(q)+1)*100/this.questions.length,
-                accuracy : this.status.accuracy + correctness/this.questions.length,
+                progress: (this.questions.indexOf(q) + 1) * 100 / this.questions.length,
+                accuracy: this.status.accuracy + correctness / this.questions.length,
                 cost: Number(this.status.cost + (res.cost ?? 0)),
                 input_tokens: this.status.input_tokens + (res.input_tokens ?? 0),
                 output_tokens: this.status.output_tokens + (res.output_tokens ?? 0),
                 time_taken: res.time_taken
-            }
-            this.logger(q,res.answer ?? "", correctness)
-            
+            };
+            this.logger(q, res.answer ?? "", correctness);
         }
-        return this.status
-        // console.log(this.status)
+        return this.status;
     }
 }
 
 
-if (models[0]){
-    const model = new ModelManager(models[0],qusetionSet)
-    model.runTest()
-}
+// if (models[0]){
+//     const model = new ModelManager(models[0],qusetionSet)
+//     model.runTest()
+// }
