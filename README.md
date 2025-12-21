@@ -1,13 +1,14 @@
-# benchmark-cli
+# ai-benchmark-cli
 
-Tiny Bun CLI to benchmark multiple LLMs on a question set and show a live table in the terminal.
-(currently only for nebius, will add openrouter)
+CLI to benchmark multiple LLMs on a question set and show a live table in the terminal.
 
 ## Installation
 
 ```bash
 bun install
 export NEBIUS_API_KEY="..."
+#or
+export OPENROUTER_API_KEY="..."
 ```
 
 ## Usage
@@ -21,13 +22,22 @@ bun run start [command]
 - **`--run`** - Run benchmark tests on the existing question set
 - **`--create`** - Interactive question creator to generate a new question set
 
+### Run web ui
+
+```bash
+cd webui
+
+# Start the react webui
+bun run dev
+```
+
 ### Examples
 
 ```bash
 # Run benchmarks with existing question set
 bun run start --run
 
-# Create a new question set interactively
+# Create a new question set with ai
 bun run start --create
 ```
 
