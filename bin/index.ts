@@ -97,8 +97,8 @@ if (argv[2] === "--create"){
                 rl.close();
                 return;
             }
-            if (num < 5 || num > 100){
-                console.log("Number of questions must be between 5 and 100");
+            if (num < 5 || num > 80){
+                console.log("Number of questions must be between 5 and 80");
                 rl.close();
                 return;
             }
