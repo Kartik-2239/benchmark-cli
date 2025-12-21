@@ -37,6 +37,7 @@ cd webui
 
 # Start the react webui
 bun run dev
+# web ui at http://localhost:3000/app
 ```
 
 ### Examples
