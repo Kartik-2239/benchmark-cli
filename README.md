@@ -12,7 +12,10 @@ export OPENROUTER_API_KEY="..."
 ```
 
 ## Images
+
+### Generated table
 ![cli-table](/assets/cli-table.png)
+### Generated web graph
 ![web-graph](/assets/web-graph.png)
 
 
