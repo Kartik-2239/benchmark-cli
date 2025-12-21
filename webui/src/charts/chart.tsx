@@ -12,7 +12,7 @@ export default function IndexLineChart({data}: {data: row[]}) {
         <YAxis width="auto" label={{ value: 'Accuracy', angle: -90, position: 'insideLeft' }} />
         <Bar type="monotone" dataKey="accuracy" barSize={30} fill="#8884d8" label={{ position: 'top', formatter: (value) => `${(value as number)?.toFixed(1)}%`}} />
         <Bar type="monotone" dataKey="cost" barSize={0} fill="#8884d8" />
-        <Tooltip formatter={(value) => `$${(value as number)?.toFixed(2)}`} contentStyle={{ backgroundColor: '#222', color: '#fff' }} />
+        <Tooltip formatter={(value) => `${(value as number)?.toFixed(2)}`} contentStyle={{ backgroundColor: '#222', color: '#fff' }} />
         </BarChart>
     </div>
     

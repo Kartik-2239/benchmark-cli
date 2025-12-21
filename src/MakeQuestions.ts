@@ -3,6 +3,9 @@ import { OpenAI } from "openai/client.js";
 import { z } from "zod";
 import fs from 'fs';
 import { dirname } from 'path';
+import { DOCS_PATH } from "./constants/index.ts";
+import { PDFParse } from 'pdf-parse';
+
 
 
 export async function MakeQuestions(topic?: string, numberOfQuestions?: number){
@@ -30,6 +33,7 @@ export async function MakeQuestions(topic?: string, numberOfQuestions?: number){
             negative_answers: z.array(z.string().describe("A negative answer to the question.")),
         }))
     });
+    const data = await readDocs();
 
     // console.log(`Generating ${numberOfQuestions} questions for the topic: ${topic}`);
     // console.log(`Using model: ${questionMaker.model}`);
@@ -42,7 +46,8 @@ export async function MakeQuestions(topic?: string, numberOfQuestions?: number){
         },
         {
         role: "user",
-        content: `Generate a list of ${numberOfQuestions} questions and answers for the topic: ${topic}. 
+        content: `Generate a list of ${numberOfQuestions} questions and answers for the topic: ${topic}
+        . The questions should be based on the following context: ${data} 
 
     Respond with a JSON object matching this schema:
     {
@@ -73,3 +78,38 @@ export async function MakeQuestions(topic?: string, numberOfQuestions?: number){
     fs.writeFileSync(outputPath, JSON.stringify(validated.questions, null, 2));
     console.log(`\nSaved ${validated.questions.length} questions to ${outputPath}`);
 }
+
+
+async function parsePDF(pdf_docs: string[]) {
+    var data = "";
+    await Promise.all(pdf_docs.map(async (doc) => {
+        const parser = new PDFParse({url: DOCS_PATH + "/" + doc});
+        const pdf_text = await parser.getText();
+        data += pdf_text.text;
+    }));
+    return data;
+}
+
+async function parseText(text_docs: string[]) {
+    var data = "";
+    await Promise.all(text_docs.map(async (doc) => {
+        const text = await Bun.file(DOCS_PATH + "/" + doc).text();
+        data += text;
+    }));
+    return data;
+}
+
+async function readDocs() {
+    const docs = fs.readdirSync(DOCS_PATH);
+    const text_docs = docs.filter(doc => doc.endsWith(".txt") );
+    const pdf_docs = docs.filter(doc => doc.endsWith(".pdf"));
+
+    const pdf_data = await parsePDF(pdf_docs);
+    const text_data = await parseText(text_docs);
+    // console.log("pdf_data.length", pdf_data.length);
+    // console.log("text_data.length", text_data.length);
+    return pdf_data + "\n\n\n" + text_data;
+}
+
+// const data = await readDocs();
+

@@ -1,18 +1,20 @@
 import type { model } from "../types"
 
-export const QUESTION_SET_PATH = "./questions/aiml_qa_sma.json";
+export const QUESTION_SET_PATH = "./questions/one_piece.json";
 // export const TOPIC = "AI";
 export const BASE_URL = "https://api.tokenfactory.nebius.com/v1/";
 // export const BASE_URL = "https://openrouter.ai/api/v1";
+export const DOCS_PATH = "./docs";
 
 
 export const evaluator : model = {
     id: 1,
-    name: "Kimi-K2-Instruct",
-    model: "moonshotai/Kimi-K2-Instruct",
+    name: "Kimi-K2-Thinking",
+    model: "moonshotai/Kimi-K2-Thinking",
     reasoning: true
 }
 
+// choose a model with high context window
 export const questionMaker:model = {
     id: 1,
     name: "Kimi-K2-Instruct",
